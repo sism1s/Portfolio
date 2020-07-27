@@ -1,0 +1,105 @@
+.btn {
+   
+    justify-self: center;
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        position: relative;
+        border-radius: 0.5rem;
+        transition: all .2s;
+        font-size: $default-font-size;
+        backface-visibility: hidden;
+        align-self: start;
+        
+        
+  
+        border: none;
+        cursor: pointer;
+    
+       
+    }
+    
+    &:hover {
+        transform: translateY(-.3rem);
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 1.5rem 2rem rgba($color-black, .5);
+        transition: all .4s;
+        backface-visibility: hidden;
+  
+    
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &--blue {
+        background-image: linear-gradient(to right, ($color-primary), ($color-primary-dark));
+        color: $color-grey-light;
+        
+    
+        &::after {
+            background-image: linear-gradient(to right,  ($color-primary), ($color-primary-dark));
+        }
+    }
+  
+  
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+}
+
+
+.btn__sm {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: $color-primary-dark;
+    color: $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      color: $color-primary-dark;
+      transform: translateY(-.3rem);
+      transform: scale(1.1, 1.1);
+      box-shadow: 0 1.5rem 2rem rgba($color-black, .5);
+      transition: all .4s;
+      backface-visibility: hidden;
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+
+
+  }
+  
+  
+
+  
+  
+  
+  

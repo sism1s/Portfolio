@@ -1,0 +1,38 @@
+.title {
+    background-image: linear-gradient(to right, rgb(7, 121, 228), rgb(32, 41, 49));
+    grid-column: full-start / full-end;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+        
+
+    }
+    
+    .heading-secondary {
+
+        
+        &--main {
+            grid-row: 2 / 3;
+            font-size: 6rem;
+            font-weight: 700;
+            letter-spacing: 1rem;
+            color: #fff;
+            text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .7);
+            
+            
+      }
+    
+    
+      
+        &--sub {
+            grid-row: 3 / 4;
+             font-size: 3rem;
+             font-weight: 400;
+             letter-spacing: 0.5rem;
+             color:#fff;
+             text-shadow: 0 1.5rem 2rem rgba(0,0,0, .7);
+            
+             
+      }
+    
+    }

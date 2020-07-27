@@ -1,0 +1,65 @@
+$color-primary: #0779e4;
+$color-primary-dark: #202931;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-white-2:#d6d6d6;
+$color-white-3:#f7f7f7;
+
+
+$color-grey-light: #f9f7f6;
+
+
+$font-primary: 'Nunito', sans-serif;
+$default-font-size: 1.6em;
+
+
+//responsive breakpoints
+
+
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-small: 44em; // 690px
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 55%;
+    }
+
+}
+
+body {
+    font-family: $font-primary;
+    color:$color-primary-dark;
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: $color-white-3;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100vh repeat(7,min-content);
+    grid-template-columns:[full-start] minmax(6rem,1fr) [center-start]
+    repeat(8,[col-start] minmax(min-content ,14rem)[col-end]) [center-end]
+    minmax(6rem,1fr)[full-end];
+}
+
+

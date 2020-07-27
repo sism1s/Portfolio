@@ -1,0 +1,39 @@
+
+
+.bio {
+    grid-column: center-start / center-end;
+    background-color: rgba($color-white, .8);
+    font-size: 1.8rem;
+    padding: 2.5rem;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    border-radius: 3px;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 2rem rgba($color-black, .5);
+
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 10rem;
+        margin-top: 0;
+        
+        }
+    
+
+
+  
+
+    &__shape {
+    
+        
+        width: 25rem;
+        height: 25rem;
+        overflow: hidden;
+        border-radius: 50%;
+        float: left;
+        border: 2px solid #0779e4;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        transform: translate(-1rem);
+        
+    }
+
+}
