@@ -33,6 +33,11 @@
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         transform: translate(-1rem);
+
+        @media only screen and (max-width: $bp-small) {
+            width: 18rem;
+            height: 18rem;
+        }
         
     }
 
