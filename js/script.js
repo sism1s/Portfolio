@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     
 
 VanillaTilt.init(document.querySelectorAll(".dan"),{
@@ -19,3 +19,10 @@ VanillaTilt.init(document.querySelectorAll(".dan"),{
     });
 
 });
+
+$(window).resize(function(){
+
+    If($(window).width()<1800){
+     $('.dan').removeClass('dan');
+    }
+   });*/

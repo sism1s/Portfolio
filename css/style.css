@@ -109,14 +109,14 @@ body {
     .exp__job-1 {
       grid-column: 1 / 2; } }
   .exp__job-1:hover {
-    transform: translateY(-1.5rem);
+    transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
     border-bottom: 2px solid #0779e4; }
   @media only screen and (max-width: 62.5em) {
     .exp__job-2 {
       grid-column: 1 / 2; } }
   .exp__job-2:hover {
-    transform: translateY(-1.5rem);
+    transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
     border-bottom: 2px solid #0779e4; }
   .exp h3 {
@@ -143,6 +143,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     .footer {
       font-size: 2rem; } }
+  @media only screen and (max-width: 43.125em) {
+    .footer {
+      grid-template-columns: none; } }
 
 .email {
   justify-self: center; }
@@ -239,6 +242,7 @@ body {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  backface-visibility: hidden;
   transition: 0.3s ease-in-out; }
   @media only screen and (max-width: 62.5em) {
     .card {
@@ -249,6 +253,13 @@ body {
     .card:hover #show {
       opacity: 1;
       margin-top: -3rem; }
+  @media only screen and (max-width: 75em), only screen and (hover: none) {
+    .card {
+      height: 42rem;
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5); }
+      .card #show {
+        opacity: 1;
+        margin-top: -3rem; } }
   .card__img {
     width: 100%;
     position: relative;
@@ -380,7 +391,7 @@ body {
     .feature {
       width: 40rem; } }
   .feature:hover {
-    transform: translateY(-1.5rem);
+    transform: translateY(-1.5rem) scale(1.03);
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5); }
   .feature__icon {
     font-size: 6rem;
