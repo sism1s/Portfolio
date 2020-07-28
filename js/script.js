@@ -1,28 +1,73 @@
-/*$(document).ready(function() {
-    
+$(document).ready(function () {
 
-VanillaTilt.init(document.querySelectorAll(".dan"),{
+    /* Sticky navigation */
+    $(".js--section-about").waypoint(function (direction) {
+        if (direction == "down") {
+            $("nav").addClass("sticky");
 
-    reverse:                true,  
-    max:                    15,     
-    startX:                 0,      
-    startY:                 0,     
-    perspective:            1000,
-    scale:                  1.05,      
-    speed:                  300,    
-    transition:             true,   
-    axis:                   null,   
-    reset:                  true,   
-    easing:                 "cubic-bezier(.03,.98,.52,.99)",   
-    glare:                  false,  
-      
+        } else {
+            $("nav").removeClass("sticky");
+        }
+    }, {
+        offset: '60px;'
+    });
+
+
+    /* Navigation scroll */
+
+    $('a[href*="#"]')
+
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function (event) {
+
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname
+            ) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+                if (target.length) {
+
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function () {
+
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) {
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1');
+                            $target.focus();
+                        };
+                    });
+                }
+            }
+        });
+
+
+
+    /* Mobile navigation */
+
+    $(".js--nav-icon").click(function () {
+        var nav = $(".js--main-nav");
+        var icon = $(".js--nav-icon i");
+
+        nav.slideToggle(200);
+
+        if (icon.hasClass("ion-md-menu")) {
+            icon.addClass("ion-md-close");
+            icon.removeClass("ion-md-menu");
+        } else {
+            icon.addClass("ion-md-menu");
+            icon.removeClass("ion-md-close");
+        }
+
+
     });
 
 });
-
-$(window).resize(function(){
-
-    If($(window).width()<1800){
-     $('.dan').removeClass('dan');
-    }
-   });*/

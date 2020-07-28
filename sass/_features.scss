@@ -33,7 +33,13 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition: transform .3s;
     backface-visibility: hidden;
-    align-self: end;
+
+    ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        list-style: none;
+      }
 
     @media only screen and (max-width: $bp-small) {
         width:40rem ;
