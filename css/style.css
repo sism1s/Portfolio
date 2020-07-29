@@ -11,9 +11,6 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 43.125em) {
-    html {
-      font-size: 55%; } }
 
 body {
   font-family: "Nunito", sans-serif;
