@@ -215,6 +215,10 @@ body {
   justify-self: center;
   align-self: start;
   margin-top: -15rem; }
+  @media only screen and (max-width: 47.5rem) {
+    .icons {
+      margin-top: -12rem;
+      font-size: 3rem; } }
   .icons a {
     padding: 1rem;
     transition: all 0.5s ease-out;
@@ -238,7 +242,8 @@ body {
   @media only screen and (max-width: 47.5rem) {
     .main-nav {
       float: left;
-      display: none; } }
+      display: none;
+      margin-top: 2rem; } }
   @media only screen and (max-width: 31.25em) {
     .main-nav {
       margin-left: 4rem;
@@ -267,7 +272,8 @@ body {
     .main-nav li a:visited {
       display: block;
       border: 0;
-      font-size: 2rem; } }
+      font-size: 2rem;
+      padding: .5rem 0; } }
 
 .main-nav li a:hover,
 .main-nav li a:active {
@@ -402,6 +408,9 @@ body {
     margin-top: -20rem; }
   .card__text {
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 62.5em) {
+      .card__text {
+        margin-bottom: 1rem; } }
 
 .title {
   background-image: linear-gradient(to right, #0779e4, #202931);

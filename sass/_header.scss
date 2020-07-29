@@ -67,7 +67,10 @@
     align-self: start;
     margin-top: -15rem;
 
-  
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: -12rem;
+      font-size: 3rem;
+      }
   a {
     padding: 1rem;
     transition: all 0.5s ease-out;
@@ -105,6 +108,7 @@
   @media only screen and (max-width: $bp-medium) {
   float: left;
   display: none;
+  margin-top: 2rem;
   }
 
 
@@ -140,6 +144,7 @@
     display: block;
     border: 0;
     font-size: 2rem;
+    padding: .5rem 0;
     }
 }
 
