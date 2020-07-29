@@ -193,7 +193,7 @@ body {
       letter-spacing: 0rem; } }
   @media only screen and (max-width: 31.25em) {
     .heading-primary--main {
-      font-size: 5rem; } }
+      font-size: 1rem; } }
 
 .heading-primary--sub {
   grid-row: 4 / 5;
@@ -210,7 +210,7 @@ body {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 31.25em) {
     .heading-primary--sub {
-      font-size: 2.5rem; } }
+      font-size: 1rem; } }
 
 .icons {
   grid-row: 2/3;
