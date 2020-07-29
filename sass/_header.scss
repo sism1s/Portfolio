@@ -37,7 +37,7 @@
           letter-spacing: 0rem;
         }
         @media only screen and (max-width: $bp-xssmall) {
-        font-size:1rem;
+        font-size:7rem;
         }
   
         
@@ -61,7 +61,7 @@
         }
 
         @media only screen and (max-width: $bp-xssmall) {
-        font-size: 1rem;
+        font-size: 3rem;
         }
 
          
@@ -122,7 +122,7 @@
 
 
 
-    @media only screen and (max-width: $bp-xssmall) {
+   @media only screen and (max-width: $bp-xssmall) {
       margin-left:4rem;
       margin-right: 0;
   }
@@ -198,7 +198,7 @@
 }
 
   @media only screen and (max-width: $bp-xssmall) {
-  margin-right: 2rem;
+  margin-right: 4rem;
   margin-top: 3rem;
 }
 }

@@ -193,7 +193,7 @@ body {
       letter-spacing: 0rem; } }
   @media only screen and (max-width: 31.25em) {
     .heading-primary--main {
-      font-size: 1rem; } }
+      font-size: 7rem; } }
 
 .heading-primary--sub {
   grid-row: 4 / 5;
@@ -210,7 +210,7 @@ body {
       font-size: 3.5rem; } }
   @media only screen and (max-width: 31.25em) {
     .heading-primary--sub {
-      font-size: 1rem; } }
+      font-size: 3rem; } }
 
 .icons {
   grid-row: 2/3;
@@ -313,7 +313,7 @@ body {
       display: inline-block; } }
   @media only screen and (max-width: 31.25em) {
     .mobile-nav-icon {
-      margin-right: 2rem;
+      margin-right: 4rem;
       margin-top: 3rem; } }
 
 .mobile-nav-icon i {
@@ -429,9 +429,6 @@ body {
   letter-spacing: 1rem;
   color: #fff;
   text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.7); }
-  @media only screen and (max-width: 31.25em) {
-    .heading-secondary--main {
-      font-size: 4rem; } }
 
 .heading-secondary--sub {
   grid-row: 3 / 4;
