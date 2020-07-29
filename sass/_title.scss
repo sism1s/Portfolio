@@ -18,6 +18,10 @@
             letter-spacing: 1rem;
             color: #fff;
             text-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .7);
+
+            @media only screen and (max-width: $bp-xssmall) {
+              font-size: 4rem;
+              }
             
       }
     
